@@ -19,6 +19,8 @@ import (
 )
 
 var (
+	VERSION    = "1.0.3"
+
 	USER       = flag.String("user", "srslog", "ssh username")
 	HOST       = flag.String("host", "115.182.75.5", "ssh server hostname")
 	PORT       = flag.Int("port", 22, "ssh server port")
@@ -97,6 +99,9 @@ func sftp_pro() {
 	defer client.Close()
 
 	switch cmd := flag.Args()[0]; cmd {
+	case "version":
+		fmt.Printf("filefetch %s\n", VERSION);
+		os.Exit(0)
 	case "ls":
 		if len(flag.Args()) < 2 {
 			logger.Error("%s %s: remote path required", cmd, os.Args[0])

@@ -1,0 +1,6 @@
+/usr/local/srs/objs/srs.log {
+	rotate 5
+	sharedscripts
+	dateext
+	copytruncate
+}
