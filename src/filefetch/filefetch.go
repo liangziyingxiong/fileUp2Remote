@@ -22,7 +22,7 @@ var (
 	VERSION    = "1.0.3"
 
 	USER       = flag.String("user", "srslog", "ssh username")
-	HOST       = flag.String("host", "115.182.75.5", "ssh server hostname")
+	HOST       = flag.String("host", "192.168.1.2", "ssh server hostname")
 	PORT       = flag.Int("port", 22, "ssh server port")
 	PASS       = flag.String("pass", "", "ssh passwd")
 	REMOTE_DIR = flag.String("remotedir", "/home/srslog/logs/", "remote dir")
