@@ -1,1 +1,0 @@
-0 1 * * * root /usr/sbin/filefetch put /usr/local/srs/objs/ > /dev/null 2>&1

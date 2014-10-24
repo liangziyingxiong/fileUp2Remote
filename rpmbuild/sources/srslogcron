@@ -1,1 +1,0 @@
-59 23 * * * root /usr/sbin/logrotate /usr/local/srs/conf/srslogrotate > /dev/null 2>&1
